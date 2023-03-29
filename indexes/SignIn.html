@@ -1,0 +1,116 @@
+<!-- Sign In HTML
+ BY: Christopher Rocco - Quinnipiac 2022
+SER 341 / 341 Full-Stack
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/SignInSignUpStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Blurred.io</title>
+</head>
+
+<body>
+
+
+  <!--Floating Background Particles-->
+
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+
+    <!--Main Card-->
+
+    <main class="pt-5">
+
+      
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+                <div class="mb-md-5 mt-md-5">
+                  <h2 class="fw-bold mb-2 pb-2">Blurred.io</h2>
+                  <p class="pb-4">Please upload an image</p>
+                  <div class="form-outline form-white mb-4">
+                    
+                    <!--DropZone Upload File-->
+
+                    <form action="/file-upload"
+                    class="dropzone rounded-1"
+                    id="my-awesome-dropzone"></form>
+
+                    <div>
+                      <button class="btn btn-outline-light btn-lg px-5 mt-5" type="submit" onclick="check()">Blur Image</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+    </main>
+
+    <!--Footer Credit-->
+
+    <footer>
+      <div class="text-center fixed-bottom pb-3">
+        Chris Rocco - Humna Hanif - Julia Woeste - William Siri
+        <br>
+        &copy; Quinnipiac 2023
+      </div>
+    </footer>
+
+  </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>
