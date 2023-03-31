@@ -1,6 +1,6 @@
-<!-- Sign In HTML
- BY: Christopher Rocco - Quinnipiac 2022
-SER 341 / 341 Full-Stack
+<!-- Blurred.io main HTML
+ BY: Christopher Rocco - Quinnipiac 2023
+SER 305
 -->
 
 <!DOCTYPE html>
@@ -78,14 +78,15 @@ SER 341 / 341 Full-Stack
                 <div class="mb-md-5 mt-md-5">
                   <h2 class="fw-bold mb-2 pb-2">Blurred.io</h2>
                   <p class="pb-4">Please upload an image</p>
-                  <div class="form-outline form-white mb-4">
+                  <div class="form-outline form-white mb-5">
                     
                     <!--DropZone Upload File-->
-
-                    <form action="/file-upload"
-                    class="dropzone rounded-1"
-                    id="my-awesome-dropzone"></form>
-
+                    <div class="p-2">
+                      <form action="/file-upload"
+                      class="dropzone rounded-1" style="color: black;"
+                      id="my-awesome-dropzone"></form>
+                    </div>
+                    
                     <div>
                       <button class="btn btn-outline-light btn-lg px-5 mt-5" type="submit" onclick="check()">Blur Image</button>
                     </div>
