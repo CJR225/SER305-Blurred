@@ -19,11 +19,11 @@ SER 305
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <script src="../../assets/js/plugins/dropzone.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="../js/main.js"></script>
 
   <title>Blurred.io</title>
 </head>
@@ -82,9 +82,13 @@ SER 305
                     
                     <!--DropZone Upload File-->
                     <div class="p-2">
-                      <form action="/file-upload"
-                      class="dropzone rounded-1" style="color: black;"
-                      id="my-awesome-dropzone"></form>
+                      
+                      <form action="/file-upload" class="p-5 form-control dropzone" id="dropzone">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple />
+                        </div>
+                      </form>
+
                     </div>
                     
                     <div>
