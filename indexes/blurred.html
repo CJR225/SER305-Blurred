@@ -79,7 +79,12 @@ SER 305
                 <div class="mb-md-5 mt-md-5">
                   <h2 class="fw-bold mb-2 pb-2">Blurred.io</h2>
                   <p class="pb-4">Use the slider to change the blurriness!</p>
-                  <div class="form-outline form-white mb-5">
+                  <img src="./images/download.png" alt = "Image" id = "uploaded-image"> 
+                  <!-- <img src=foo() alt = "<?php echo Image: $_FILES['file']['tmp_name']; ?>" id = "uploaded-image">
+                  <h1> <script>foo()</script> </h1>
+                  <h1><?php echo "Hello world" ?></h1> -->
+                  <!-- <h1> <?php echo Image: $_FILES['file']['tmp_name']; ?> </h1> -->
+                  <div class="form-outline form-white mb-5" alt = "Uploaded Image">
                     <!--Blurred Image-->
                     
                     <!--Slider-->
@@ -112,6 +117,25 @@ SER 305
 
   </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="../js/main.js">
+  function foo() {
+    print("Hi there");
+    return "Hello Foo";
+  }
+</script>
+
+<script src="../js/main.js">
+  function displayImage() {
+    var input = document.querySelector('input[type="file"]');
+    var file = input.files[0];
+    var reader = new FileReader();
+    reader.onload = function() {
+      var imageURL = reader.result;
+      document.getElementById("uploaded-image").src = imageURL;
+      document.getElementById("image-url").value = imageURL;
+    };
+    reader.readAsDataURL(file);
+  }
+</script>
 
 </html>
